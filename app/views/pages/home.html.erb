@@ -1,0 +1,12 @@
+<% if logged_in? %>
+
+<h1> !!! TOP SECRET !!! </h1>
+
+<p> Ne cliquez pas sur <%= link_to("ce lien", answer_path) %> sinon vous allez trouver la réponse à la question de l'univers </p>
+
+<% else %>
+
+<h1> !!! TOP SECRET !!! </h1>
+<p> Identifie toi ici <%= link_to "Log in", login_path, class: "btn btn-success" %> </p>
+
+<% end %>
